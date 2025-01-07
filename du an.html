@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>
+    <title>Ô Nhiễm Môi Trường</title>
+        <style>
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #04ffb4;
+        color: white;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer a {
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .social-logo {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .social-logo:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #12ffcc;
+        color: white;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+    .facebook-logo {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .facebook-logo:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+
+    .content {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .content img {
+        flex: 1;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .content img:hover {
+        transform: scale(1.05);
+    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #58fcd8;
+            color: rgb(44, 238, 252);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3d84c7;
+            padding: 10px;
+        }
+
+        nav button {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #93fff1;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #00ffea;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #00aeff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .content img {
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+
+        .content div {
+            flex: 2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00e1ff;
+            color: white;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('https://s3.cloud.cmctelecom.vn/tinhte1/2017/12/4205775_C.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333; 
+}
+
+
+    header {
+        background: linear-gradient(135deg, #1d77ff, #1f93ff);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #00ffdd;
+        padding: 15px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav button {
+        background: white;
+        border: 2px solid #5e5cff;
+        border-radius: 25px;
+        margin: 0 10px;
+        padding: 10px 25px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #7bfff4;
+        transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+        background: #0084ff;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    section {
+        padding: 40px 20px;
+        margin: 20px auto;
+        max-width: 900px;
+        background: white;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    h1, h2, h3 {
+        color: #3dadb1;
+    }
+
+    h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+        list-style: square;
+        margin-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #228b22;
+        color: white;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(179, 255, 236, 0.7); 
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 90%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #333;
+}
+
+header {
+    background: rgba(135, 231, 248, 0.7); 
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: rgba(141, 255, 249, 0.7); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+</style>
+<script>
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+        const triggerBottom = window.innerHeight * 0.9;
+
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop < triggerBottom) {
+                section.classList.add("active");
+            } else {
+                section.classList.remove("active");
+            }
+        });
+    });
+</script>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vấn Đề Ngoài Xã Hội Hiện Nay </h1>
+        <p>Đây là bài tin của Nhật Khánh ✨ Thế Anh 😏 Hải Đăng 🤪</p>
+    </header>
+    <nav>
+        <button onclick="scrollToSection('home')">Trang Chủ</button>
+        <button onclick="scrollToSection('nguyen-nhan')">Nguyên Nhân</button>
+        <button onclick="scrollToSection('hau-qua')">Hậu Quả</button>
+        <button onclick="scrollToSection('bien-phap')">Biện Pháp</button>
+    </nav>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    <section id="home">
+        <h2>Thực trạng ô nhiễm môi trường.</h2>
+        <div class="content">
+            <img src="https://victory.com.vn/wp-content/uploads/2022/12/bia-e1669956932727.webp" alt="Hình ảnh môi trường bị ô nhiễm">
+            <div>
+                <p>Môi trường thế giới đang bi ô nhiễm trầm trọng và Việt Nam chúng ta cũng không ngoại lệ. Khi mà tình trang ô nhiễm tại Việt Nam đang ngày càng đáng báo động từ ô nhiễm đất, không khí, nước hay âm thanh... Đặc biệt là ở những khu công nghiệp hay những vùng có nhận thức về bảo vệ môi trường kém càng khiến cho môi trường ngày càng ô nhiễm.<a href="https://tapdoandaiviet.com.vn/o-nhiem-moi-truong-la-gi-thuc-trang-dang-bao-dong-snv1357.html" target="_blank" title="Di chuyển đến trang web khác "> Xem Thêm. </a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nguyen-nhan">
+        <h2>1. Về Nguyên nhân</h2>
+        <div class="content">
+            <img src="https://tapdoandaiviet.com.vn/manage/responsive_filemanager/source/2024/01/%C3%B4%20nhi%E1%BB%85m%20m%C3%B4i%20tr%C6%B0%E1%BB%9Dng/o-nhiem-moi-truong-xe-may.jpg" alt="Khí thải từ giao thông">
+            <div>
+                <h3>Khí thải từ giao thông</h3>
+                <p>Các phương tiện giao thông sử dụng nguyên liệu hóa thạch khiến môi trường ô nhiễm trầm trọng. Khí thải từ những phương tiện giao thông này xả thẳng ra môi trường với khối lượng lớn khiến không khí ngày càng ô nhiễm trầm trọng.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="https://tapdoandaiviet.com.vn/manage/responsive_filemanager/source/2024/01/%C3%B4%20nhi%E1%BB%85m%20m%C3%B4i%20tr%C6%B0%E1%BB%9Dng/o-nhiem-khong-khi.jpg" alt="Ô nhiễm từ công nghiệp">
+            <div>
+                <h3>Về Công nghiệp</h3>
+                <p>Ở một số vùng lân cận tình trạng ô nhiễm môi trường càng trầm trọng hơn khi khí thải nhà máy chưa được xử lý hoặc xử lý sơ sài xả ra môi trường hàng tấn mỗi ngày. Ngoài ra nhiều nhà máy còn xả các chất hóa học, chất thải độc hại chưa được xử lý ra môi trường, khiến chúng ô nhiễm trầm trọng.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hau-qua">
+        <h2>2. Hậu quả</h2>
+        <ul>
+            <li>Ô nhiễm không khí có thể gây ra các bệnh về hô hấp, tim mạch, ung thư và dị ứng.</li>
+            <li>Ô nhiễm nước có thể gây ra các bệnh về tiêu hóa, da liễu, gan, thận và truyền nhiễm.</li>
+            <li>Ô nhiễm đất có thể gây ra sự suy giảm chất lượng và sinh khối của cây trồng, cũng như ảnh hưởng đến chuỗi thức ăn sinh học.</li>
+            <li>Ô nhiễm sinh vật sống có thể gây ra sự biến đổi di truyền, suy thoái đa dạng sinh học và tuyệt chủng loài.</li>
+            <li>Ô nhiễm tài nguyên thiên nhiên có thể gây ra sự cạn kiệt và lãng phí của các nguồn tài nguyên quý giá như dầu mỏ, than đá, khoáng sản và năng lượng tái tạo.</li>
+            <li>Hậu quả nghiêm trọng của ô nhiễm môi trường còn có thể khiến sinh vật biến đổi gen, tạo ra các sinh vật bất thường, thai nhi trong bụng mẹ cũng có thể bị ảnh hưởng bởi việc ô nhiễm môi trường.</li>
+        </ul>
+        <div class="content">
+            <img src="https://image.luatvietnam.vn/uploaded/twebp/images/original/2023/12/03/o-nhiem-moi-truong-la-gi_0312205959.jpg" alt="Ô nhiễm môi trường">
+            <img src="https://image.luatvietnam.vn/uploaded/twebp/images/original/2023/12/03/o-nhiem-khong-khi-gay-ra-nhieu-van-de-ve-ho-hap_0312205959.jpg" alt="Ô nhiễm không khí">
+        </div>
+    </section>
+    
+    <section id="bien-phap">
+        <h2>3.Biện pháp khắc phục</h2>
+        <ul>
+            <li>Kiểm soát chặt chẽ việc thực thi các quy định xử lý chất thải, chất độc hại trước khi xả ra môi trường.</li>
+            <li>Tăng cường giáo dục và nhận thức về ý thức bảo vệ môi trường cho mỗi người.</li>
+            <li>Ưu tiên sử dụng các sản phẩm và dịch vụ thân thiện với môi trường, tiết kiệm và tái chế.</li>
+            <li>Tham gia các hoạt động bảo vệ môi trường như trồng cây xanh</li>
+            <li>Các khu công nghiệp, hóa chất cần phải xử lý chất thải trước khi thải ra môi trường.</li>
+            <li>Hạn chế sử dụng phương tiện giao thông dùng nguyên liệu hóa thạch.</li>
+            <li>Khai thác các tài nguyên thiên nhiên đúng cách.</li>
+            <li>Cần công nghiệp hóa hiện đại hóa đúng cách, hạn chế việc làm ồ ạt mà không chú trọng đến môi trường.</li>
+        </ul>
+        <div class="content">
+            <img src="https://sinhquyennghean.com.vn/images/upload/images/m%C3%B4i%20tr%C6%B0%E1%BB%9Dng/nang-luong-sach.jpg" alt="Ô nhiễm môi trường">
+            <img src="https://sinhquyennghean.com.vn/images/upload/images/m%C3%B4i%20tr%C6%B0%E1%BB%9Dng/t%C3%A1i%20ch%E1%BA%BF.jpg" alt="Ô nhiễm không khí">
+        </div>
+    </section>
+
+    <footer>
+        <p>sau đây là bài khảo sát của chúng tớ cảm ơn đã theo dõi </p>
+            <a href="https://www.facebook.com/AnhHaiRF" target="_blank" title="Truy cập Facebook của tôi">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="facebook-logo">
+            </a>
+            <a href="https://github.com/HanniAnn" target="_blank" title="Truy cập GitHub của tôi">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" class="social-logo">
+        </footer>
+        
+    </footer>
+</body>
+</html>
